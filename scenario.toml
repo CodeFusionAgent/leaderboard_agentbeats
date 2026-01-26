@@ -1,16 +1,19 @@
 [green_agent]
 agentbeats_id = "019bc4f3-9e0f-7ba3-8fee-9291241a4d98"
 env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LOG_LEVEL = "INFO" }
+#image = "green-agent:latest"
+#env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
 
 [[participants]]
-agentbeats_id = ""
-name = "role_1_name"
-env = {}
+name = "pro_debater"
+image = "purple-agent:latest"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
 
 [[participants]]
-agentbeats_id = ""
-name = "role_2_name"
-env = {}
+name = "con_debater"
+image = "purple-agent:latest"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
 
 [config]
-# Add your assessment config here
+topic = "Should artificial intelligence be regulated?"
+num_rounds = 2
