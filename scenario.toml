@@ -6,13 +6,15 @@ env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LOG_LEVEL = "INFO" }
 
 [[participants]]
 name = "pro_debater"
-image = "purple-agent:latest"
-env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
+agentbeats_id = "019c025e-dd8c-7360-a0e4-3606f0571a4d"
+#image = "purple-agent:latest"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LOG_LEVEL = "INFO" }
 
 [[participants]]
 name = "con_debater"
-image = "purple-agent:latest"
-env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
+agentbeats_id = "019c025e-dd8c-7360-a0e4-3606f0571a4d"
+#image = "purple-agent:latest"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LOG_LEVEL = "INFO" }
 
 [config]
 topic = "Should artificial intelligence be regulated?"
